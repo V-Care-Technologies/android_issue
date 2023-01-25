@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+    <ImageView
+        android:id="@+id/btn_add_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_btn_addn"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_margin_half_half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/btn_remove_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_minus"
+        android:visibility="visible"
+        android:layout_marginStart="@dimen/_margin"
+        app:layout_constraintStart_toEndOf="@id/btn_add_answer"
+        app:layout_constraintTop_toTopOf="@id/btn_add_answer"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_multi_type_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_answer"
+        android:orientation="horizontal">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_social_gr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_margin_half_half"
+            android:hint=""
+            style="@style/OutlinedRoundedBox"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:boxStrokeColor="@color/black"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_social_gr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLength="10"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_No"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_margin_half_half"
+            android:hint=""
+            style="@style/OutlinedRoundedBox"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeWidthFocused="1dp"
+            app:boxStrokeColor="@color/black"
+            app:boxBackgroundColor="@android:color/transparent"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_No"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/inter_medium"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/medium_text"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

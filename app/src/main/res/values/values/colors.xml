@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="buttoncolor">#5669FF</color>
+    <color name="greyhint">#B5B5B5</color>
+    <color name="borderColor">#E4DFDF</color>
+    <color name="colorRed">#8F2024</color>
+    <color name="colorPink">#FE2572</color>
+    <color name="colorTextHint">#F1F0F0</color>
+    <color name="textColor">#1E90FF</color>
+    <color name="backgroundColor">#ECF4FF</color>
+    <color name="spinnerColor">#013475</color>
+    <color name="signatureBackground">#20B5B5B5</color>
+
+    <color name="radio_groupcolor">#212322</color>
+
+
+
+    <color name="rv_pink">#FFC6FF</color>
+    <color name="rv_orange">#FFD7A6</color>
+    <color name="rv_yellow">#FDFFB6</color>
+    <color name="rv_lightgreen">#CBFFBF</color>
+    <color name="rv_violet">#BDB2FF</color>
+    <color name="rv_blue">#A0C4FF</color>
+    <color name="rv_lblue">#9CF6FF</color>
+
+
+    <color name="colororange">#F96E35</color>
+
+
+
+    <color name="status_red">#DD3848</color>
+    <color name="status_blue">#476EFF</color>
+    <color name="status_verified">#28A745</color>
+
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/tv_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="1. Type of school building"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/template_cl_spn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_text"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+
+        >
+
+        <Spinner
+            android:id="@+id/spinner_recycler_template"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_background_border"
+
+            android:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/spinner_drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_margin_20"
+            android:src="@drawable/ic_drop_down"
+            android:visibility="gone"
+
+            app:layout_constraintBottom_toBottomOf="@id/spinner_recycler_template"
+            app:layout_constraintEnd_toEndOf="@id/spinner_recycler_template"
+            app:layout_constraintTop_toTopOf="@id/spinner_recycler_template" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/backgroundColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_spn"
+        />-->
+    <EditText
+        android:id="@+id/et_template"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_background_border"
+        android:fontFamily="@font/inter_regular"
+        android:paddingStart="@dimen/_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_template"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        android:buttonTint="@color/black"
+
+        android:textColor="@color/radio_groupcolor"
+        android:fontFamily="@font/inter_regular"
+        android:textSize="@dimen/medium_text"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text">
+ <!--       <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hut"
+            android:buttonTint="@color/black"
+
+            android:textColor="@color/radio_groupcolor"
+            android:paddingStart="@dimen/_padding_half"
+            android:fontFamily="@font/inter_regular"
+            android:textSize="@dimen/medium_text"
+            />-->
+
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cbtemplate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_cbtemplate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+        >
+
+        <CheckBox
+        android:id="@+id/cb_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@drawable/cb_selector"
+        android:buttonTint="@color/black"
+        android:drawablePadding="0dp"
+
+        android:fontFamily="@font/inter_regular"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:textSize="@dimen/medium_text"
+        android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_image_video"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+            app:layout_constraintStart_toStartOf="@id/tv_title_text"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+            android:drawablePadding="10dp"
+            app:cornerRadius="10dp"
+            android:drawableTint="@color/spinnerColor"
+            android:fontFamily="@font/inter_regular"
+            android:layout_gravity="center"
+            android:paddingStart="60dp"
+            android:gravity="start|center_vertical"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:backgroundTint="@color/white"
+            android:text="Upload image from card"
+            android:includeFontPadding="false"
+            android:textAllCaps="false"
+            android:textColor="@color/spinnerColor"
+            android:textSize="@dimen/medium_text"
+            app:icon="@drawable/ic_gallery"
+            app:iconTintMode="screen"
+            app:iconTint="@android:color/transparent"
+            />
+
+    <EditText
+        android:id="@+id/et_other_information"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@drawable/ic_background_border"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start"
+        android:hint="Type here..."
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text" />
+    <EditText
+        android:id="@+id/tv_date_temp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+        android:drawablePadding="10dp"
+        app:cornerRadius="10dp"
+        android:paddingStart="15dp"
+        android:focusable="false"
+        android:paddingEnd="15dp"
+        android:drawableTint="@color/spinnerColor"
+        android:fontFamily="@font/inter_regular"
+        android:layout_gravity="center"
+        android:gravity="start|center_vertical"
+        android:hint="DD-MM-YY"
+        android:backgroundTint="@color/white"
+        android:includeFontPadding="false"
+        android:textAllCaps="false"
+        android:textColor="@color/spinnerColor"
+        android:textSize="@dimen/medium_text"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:background="@drawable/ic_background_border"
+        app:iconTintMode="screen"
+        app:iconTint="@android:color/transparent"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_signture"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_background_border"
+        android:backgroundTint="@color/signatureBackground"
+
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_background_border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <ImageView
+            android:id="@+id/iv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btn_add_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_btn_addn"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_margin_half_half"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_text"
+        />
+
+
+    <ImageView
+        android:id="@+id/btn_remove_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_minus"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/_margin"
+        app:layout_constraintStart_toEndOf="@id/btn_add_answer"
+        app:layout_constraintTop_toTopOf="@id/btn_add_answer"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_add_multi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_answer"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        android:layout_marginTop="5dp"
+
+
+        />
+
+
+
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dependent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/tv_title_text"
+        app:layout_constraintTop_toBottomOf="@id/rg_template"
+        app:layout_constraintEnd_toEndOf="@id/tv_title_text"
+        android:layout_marginTop="5dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

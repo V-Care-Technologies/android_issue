@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="small_text">13dp</dimen>
+    <dimen name="medium_text">16dp</dimen>
+    <dimen name="large_text">19dp</dimen>
+    <dimen name="mlarge_text">21dp</dimen>
+    <dimen name="xlarge_text">22dp</dimen>
+    <dimen name="xxlarge_text">25dp</dimen>
+    <dimen name="xxxlarge_text">28dp</dimen>
+    <dimen name="xxxxlarge_text">30dp</dimen>
+    <dimen name="xllarge_text">31dp</dimen>
+    <dimen name="vlarge_text">34dp</dimen>
+    <dimen name="vilarge_text">37dp</dimen>
+
+    <dimen name="_margin_double_double">75dp</dimen>
+    <dimen name="_margin_double">32dp</dimen>
+    <dimen name="_margin_double_mid">110dp</dimen>
+    <dimen name="_margin_mid">90dp</dimen>
+    <dimen name="_margin_75">24dp</dimen>
+    <dimen name="_margin_80">30dp</dimen>
+    <dimen name="_margin_15">15dp</dimen>
+
+
+    <dimen name="_margin_30">30dp</dimen>
+    <dimen name="common_height">40dp</dimen>
+    <dimen name="common_height_2">45dp</dimen>
+    <dimen name="common_height_3">65dp</dimen>
+    <dimen name="_margin_50">55dp</dimen>
+    <dimen name="_margin_20">20dp</dimen>
+    <dimen name="_margin_18">18dp</dimen>
+    <dimen name="_margin_23">23dp</dimen>
+    <dimen name="_margin">16dp</dimen>
+    <dimen name="_margin_half_mid">12dp</dimen>
+    <dimen name="_margin_half">8dp</dimen>
+    <dimen name="_margin_half_half">4dp</dimen>
+
+    <dimen name="_padding_double">32dp</dimen>
+    <dimen name="_padding">16dp</dimen>
+    <dimen name="_padding_mid">12dp</dimen>
+    <dimen name="_padding_half">8dp</dimen>
+    <dimen name="_padding_half_mid">5dp</dimen>
+    <dimen name="_padding_half_half">4dp</dimen>
+
+
+    <dimen name="_bottom_corner_radius">32dp</dimen>
+    <dimen name="_setting_corner_radius">40dp</dimen>
+    <dimen name="_corner_radius">15dp</dimen>
+    <dimen name="_corner_radius_half">7.5dp</dimen>
+
+    <dimen name="_elevation">10dp</dimen>
+    <dimen name="_elevation_half">5dp</dimen>
+
+
+    <dimen name="design_bottom_navigation_height" tools:override="true">62dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">@dimen/small_text</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">
+        @dimen/small_text
+    </dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="_12sdp">12.00dp</dimen>
+    <dimen name="_5sdp">5.00dp</dimen>
+    <dimen name="_15sdp">15.00dp</dimen>
+    <dimen name="_10sdp">10.00dp</dimen>
+    <dimen name="_13sdp">13.00dp</dimen>
+</resources>
